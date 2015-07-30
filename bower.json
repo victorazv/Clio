@@ -1,0 +1,16 @@
+{
+  "name": "clio",
+  "version": "1.0",
+  "dependencies": {
+  	"jquery": "master",
+  	"angular": "master"
+  },
+  "description": "Gerenciamento de abastecimento",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Victor Nunes"
+  ],
+  "license": "MIT"
+}

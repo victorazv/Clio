@@ -46,23 +46,13 @@ if (isset($_GET['id'])) {
 			    	<input type="text" class="form-control" id="km" name="km">
 			  	
 			    	<label for="exampleInputEmail1">Litros</label>
-			    	<input type="text" class="form-control" id="litros" name="litros" value=
-			    	  	<?php if(isset($linha)){ 
-				    		echo $linha->qtdlitros;
-				    	}else{ echo ""; } ?> >
+			    	<input type="text" class="form-control" id="litros" name="litros">
 
 			    	<label for="exampleInputEmail1">Valor</label>
-			    	<input type="text" class="form-control" id="valor" name="valor" value=
-			    	 	<?php if(isset($linha)){ 
-				    		echo $linha->valor;
-				    	}else{ echo ""; } ?> >
+			    	<input type="text" class="form-control" id="valor" name="valor">
 
 					<label for="exampleInputEmail1">Combustível</label>
-					<select class="form-control" id="combustivel" name="combustivel" value=
-					   	<?php if(isset($linha)){ 
-				    		echo $linha->combustivel;
-				    	}else{
-				    		echo ""; } ?> >
+					<select class="form-control" id="combustivel" name="combustivel">
 						<option>Álcool</option> 
 			 			<option>Gasolina</option>
 			 			<option>Ambos</option>
@@ -85,17 +75,14 @@ if (isset($_GET['id'])) {
 <script src="js/scripts.js"></script>
 
 <?php 
-if (isset($_GET["id"])) {
-	?>
-	<script type="text/javascript">
-		document.getElementsByids();
-	</script>
-	<?php
-}
- ?>
-<script type="text/javascript">
+if (isset($_GET["id"])) { ?>
 	
-</script>
+	<script type="text/javascript">
+		carregaValoresCampos();
+	</script>
+			
+<?php } ?>
+
 
 <?php 
 	if (isset($_GET['id'])){
